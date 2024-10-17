@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascripto</title>
+</head>
+<body>
+
+    <script src="index.js"></script>
+
+    <!-- 1 replacing text -->
+
+    <h1 id = "Head">What can JavaScript do?</h1>
+    <p1 id = "Par">Hello JavaScript</p1>
+
+    <button type="button" onclick='document.getElementById("Head").innerHTML= "JavaScript can do many things."'>Dont click me</button>
+    
+    <br />
+    <br />
+    <br />
+
+    <!-- 2 change first image to another -->
+
+    <button type="button" onclick='document.getElementById("Ellen").src="ellen.webp"'>turn on</button>
+
+    <img id = "Ellen" src="ellen.webp" alt="" width="300" height="300">
+
+    <button type="button" onclick='document.getElementById("Ellen").src="elliot.webp"'>turn off</button>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 3 making paragraph bold -->
+
+    <button type="button" onclick='document.getElementById("Par").style.fontWeight="Bold"'>bold</button>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 4 show hide -->
+
+    <p id = "HiddenPar" style="display: none;">date: 10/10/24</p>
+
+    <button id = "but1" type="button" onclick='document.getElementById("HiddenPar").style.display="block"'>show</button>
+
+    <button id = "but2" type="button" onclick='document.getElementById("HiddenPar").style.display="none"'>hide</button>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 10 multiplication and division -->
+    
+    <p>1st Number: <input type="number" id="num1"></p>
+    <p>2nd Number: <input type="number" id="num2"></p>
+
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+
+    <p>The Result Is:</p>
+    <p id="result"></p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 11 convert temperature -->
+
+    <p>Temperature in Fahrenheit: <input type="number" id="TempFahrenheit"></p>
+    <p>Temperature in Celsius: <input type="number" id="TempCelsius"></p>
+
+    <button onclick="convertFahr()">ConvertFahrenheit</button>
+    <button onclick="convertCels()">convertCelsius</button>
+
+
+    <p>The Result Is:</p>
+    <p id ="resultTemp"></p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 12 even or odd -->
+
+    <p>Enter a number: <input type="number" id="num4"></p>
+
+    <button type="button" onclick="evenOdd()">Check</button>
+
+    <p>The Result Is:</p>
+
+    <P id = "ResultEvenOdd"></P>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 13 min max -->
+
+    <p>Enter a 1 number: <input type="number" id="mnum1"></p>
+    <p>Enter a 2 number: <input type="number" id="mnum2"></p>
+    <p>Enter a 3 number: <input type="number" id="mnum3"></p>
+
+    <button type="button" onclick="minMax()">find min and max</button>
+
+    <p id = "ResultMinMax"></p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 14 area of triangle -->
+
+    <p>Side a: <input type="number" id="sideA" step="0.01"></p>
+    <p>Side b: <input type="number" id="sideB" step="0.01"></p>
+    <p>Side c: <input type="number" id="sideC" step="0.01"></p>
+
+    <button onclick="calculateArea()">Calculate Area</button>
+
+    <p>The Area of the Triangle is:</p>
+    <p id="resultArea"></p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 15 factorial -->
+
+    <p>Enter a number: <input type="number" id="fnum"></p>
+
+    <button onclick="factorial()">Factorial</button>
+
+    <p id = "FResult">The Result is:</p>
+
+    <br />
+    <br />
+    <br />
+
+    
+
+    <!-- 16 count vowels and consonants -->
+
+    <p>Enter a string: <input type="text" id="cString"></p>
+
+    <button onclick="countVowelsConsonants()">Count Vowels and Consonants</button>
+
+    <p id="ResultVC">Vowels: 0 | Consonants: 0</p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 17 transform second into hour and minutes -->
+
+    <p>Enter seconds: <input type="number" id="SecNum"></p>
+
+    <button onclick="transformTime()">Transform time</button>
+
+    <p id = "HourResult">Hours: </p>
+    <p id = "MinuteResult">Minutes: </p>
+
+    <!-- 18 most frequent number -->
+    
+    <p>Enter numbers separated by commas here: <input type="text" id="inputArray"></p>
+
+    <button onclick="findMostFrequent()">Find Most Frequent</button>
+
+    <p id="FrequentResult">Most frequent</p>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 19 fibbonaci -->
+
+    <p>Enter the number of terms:</p>
+    <input type="number" id="fibInput" min="1" value="10">
+
+    <button onclick="countFib()">Generate</button>
+
+    <br /><br />
+    <div id="fibResult"></div>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- 20 New year -->
+
+    <button onclick="NewYear()">Before new year</button>
+
+    <p id="NYResult">Happy new year</p>
+
+</body>
+</html>
